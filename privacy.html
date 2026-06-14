@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Polityka prywatności – GPXTracker</title>
+      <title>Privacy Policy – GPXTracker</title>
       <style>
          body {
          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,25 +18,22 @@
          padding: 20px;
          text-align: center;
          }
+         header h1 {
+         color: white;
+         }
          main {
          max-width: 800px;
          margin: 40px auto;
          padding: 20px;
-         background-color: white;
+         background: white;
          border-radius: 12px;
          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
          }
-         header h1 {
-         color: #ffffff;
-         }
-         h1 {
-         color: #000000;
-         margin-bottom: 20px;
+         h1, h2 {
+         color: #000;
          }
          h2 {
-         color: #000000;
          margin-top: 30px;
-         margin-bottom: 10px;
          }
          p, li {
          font-size: 16px;
@@ -46,19 +43,138 @@
          padding-left: 25px;
          }
          a {
-         color: #000000;
+         color: #000;
          text-decoration: none;
          }
          .section {
          margin-bottom: 25px;
          }
+         hr {
+         margin: 50px 0;
+         border: none;
+         border-top: 2px solid #ddd;
+         }
       </style>
    </head>
    <body>
       <header>
-         <h1>Polityka prywatności – GPXTracker</h1>
+         <h1>Privacy Policy – GPXTracker</h1>
       </header>
       <main>
+         <div class="section">
+            <p>
+               Your privacy is important to us.
+               The <strong>GPXTracker</strong> application works mainly locally on the user's device.
+               Track files and location data are not transmitted to the app developers.
+            </p>
+         </div>
+         <div class="section">
+            <h2>Firebase Analytics</h2>
+            <p>
+               The application uses the <strong>Google Firebase Analytics</strong> service
+               to collect anonymous statistics about application usage and to improve its operation.
+            </p>
+            <p>
+               Information about interactions with the application may be collected,
+               such as feature usage, screen openings, or interface button clicks.
+               This data is not used to identify the user.
+            </p>
+            <p>
+               The following data is not sent to Firebase Analytics:
+            </p>
+            <ul>
+               <li>user GPX tracks,</li>
+               <li>GPS coordinates,</li>
+               <li>user file names,</li>
+               <li>email addresses or contact information,</li>
+               <li>other data that could directly identify the user.</li>
+            </ul>
+         </div>
+         <div class="section">
+            <h2>GPX Files</h2>
+            <p>
+               The application saves and reads GPX files only locally on the user's device.
+               You can open existing GPX files from device storage or other available locations.
+            </p>
+            <p>
+               Data contained in GPX files is not transmitted to the app developers
+               or any external services.
+            </p>
+         </div>
+         <div class="section">
+            <h2>Location Data</h2>
+            <p>
+               The application uses location permissions:
+               <code>ACCESS_COARSE_LOCATION</code>,
+               <code>ACCESS_FINE_LOCATION</code>,
+               and <code>ACCESS_BACKGROUND_LOCATION</code>
+               only to display the user's position on the map and save tracks in GPX format.
+            </p>
+            <p>
+               Location data remains on the user's device and is not transmitted
+               to any third parties.
+            </p>
+         </div>
+         <div class="section">
+            <h2>Elevation Data (Optional)</h2>
+            <p>
+By default, the app uses local GPS data for elevation. If you explicitly enable the OpenTopoData service in settings, the app transmits a simplified, sampled subset of your coordinates (limited to 100 points per track) to opentopodata.org to retrieve high-precision topographic data (SRTM 30m). This minimizes data transmission while significantly improving the accuracy of your elevation profiles.
+            </p>
+         </div>
+         <div class="section">
+            <h2>Permissions</h2>
+            <ul>
+               <li>
+                  <strong>Location:</strong>
+                  displaying the user's position on the map and recording tracks.
+               </li>
+               <li>
+                  <strong>Storage / files:</strong>
+                  saving and reading GPX files.
+               </li>
+            </ul>
+         </div>
+         <div class="section">
+            <h2>Data Storage</h2>
+            <p>
+               All data related to user tracks is stored locally on the user's device.
+               The application does not have its own server that stores user data.
+            </p>
+         </div>
+         <div class="section">
+            <h2>External Services</h2>
+            <p>
+               The application uses the following service:
+            </p>
+            <ul>
+               <li>
+                  <strong>Google Firebase Analytics</strong> – anonymous analysis of application usage.
+               </li>
+            </ul>
+            <p>
+               Information about Google's privacy practices is available in Google's documentation.
+            </p>
+         </div>
+         <div class="section">
+            <h2>User Age</h2>
+            <p>
+               The application is intended for users of all ages.
+            </p>
+         </div>
+         <div class="section">
+            <h2>Contact</h2>
+            <p>
+               If you have any questions regarding this Privacy Policy,
+               you can contact:
+            </p>
+            <p>
+               <a href="mailto:trackergpx@gmail.com">
+               trackergpx@gmail.com
+               </a>
+            </p>
+         </div>
+         <hr>
+         <h1>Polityka prywatności – GPXTracker</h1>
          <div class="section">
             <p>
                Twoja prywatność jest dla nas ważna.
@@ -105,8 +221,8 @@
             <p>
                Aplikacja korzysta z uprawnień lokalizacji:
                <code>ACCESS_COARSE_LOCATION</code>,
-               <code>ACCESS_FINE_LOCATION</code> oraz
-               <code>ACCESS_BACKGROUND_LOCATION</code>
+               <code>ACCESS_FINE_LOCATION</code>
+               oraz <code>ACCESS_BACKGROUND_LOCATION</code>
                wyłącznie w celu wyświetlania pozycji użytkownika na mapie
                oraz zapisywania tras w formacie GPX.
             </p>
@@ -114,6 +230,22 @@
                Dane lokalizacyjne pozostają na urządzeniu użytkownika
                i nie są przesyłane do żadnych podmiotów zewnętrznych.
             </p>
+         </div>
+         <div class="section">
+<h2>Dane wysokościowe (opcjonalne)</h2>
+<p>
+Domyślnie aplikacja wykorzystuje lokalne dane GPS do określania wysokości.
+Jeśli użytkownik wyraźnie włączy usługę OpenTopoData w ustawieniach,
+aplikacja przesyła uproszczony, próbkowany fragment współrzędnych trasy
+(ograniczony do maksymalnie 100 punktów na trasę) do opentopodata.org
+w celu pobrania bardzo dokładnych danych topograficznych
+(na podstawie zbioru danych SRTM 30 m).
+</p>
+
+<p>
+Takie rozwiązanie ogranicza ilość przesyłanych danych,
+jednocześnie znacząco poprawiając dokładność profili wysokościowych tras.
+</p>
          </div>
          <div class="section">
             <h2>Uprawnienia</h2>
@@ -131,8 +263,8 @@
          <div class="section">
             <h2>Przechowywanie danych</h2>
             <p>
-               Wszystkie dane związane z trasami użytkownika są przechowywane
-               lokalnie na urządzeniu użytkownika.
+               Wszystkie dane związane z trasami użytkownika są przechowywane lokalnie
+               na urządzeniu użytkownika.
                Aplikacja nie posiada własnego serwera przechowującego dane użytkowników.
             </p>
          </div>
@@ -143,7 +275,8 @@
             </p>
             <ul>
                <li>
-                  <strong>Google Firebase Analytics</strong> – anonimowa analiza użycia aplikacji.
+                  <strong>Google Firebase Analytics</strong>
+                  – anonimowa analiza użycia aplikacji.
                </li>
             </ul>
             <p>
@@ -162,68 +295,6 @@
                W razie pytań dotyczących polityki prywatności możesz skontaktować się pod adresem:
             </p>
             <p>
-               <a href="mailto:trackergpx@gmail.com">
-               trackergpx@gmail.com
-               </a>
-            </p>
-         </div>
-         <hr>
-         <h1>Privacy Policy – GPXTracker</h1>
-         <div class="section">
-            <p>
-               Your privacy is important to us.
-               The <strong>GPXTracker</strong> app works mainly locally on the user's device.
-               GPX files and location data are not transmitted to the app developers.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Firebase Analytics</h2>
-            <p>
-               The app uses <strong>Google Firebase Analytics</strong>
-               to collect anonymous usage statistics and improve the application.
-            </p>
-            <p>
-               The collected information may include app interactions,
-               such as feature usage, screen views, or interface button clicks.
-               This data is not used to directly identify users.
-            </p>
-            <p>
-               The app does not send to Firebase Analytics:
-            </p>
-            <ul>
-               <li>GPX tracks,</li>
-               <li>GPS coordinates,</li>
-               <li>user file names,</li>
-               <li>email addresses or contact information.</li>
-            </ul>
-         </div>
-         <div class="section">
-            <h2>GPX Files</h2>
-            <p>
-               The app saves and reads GPX files only locally on the user's device.
-               GPX data is not transmitted to developers or third parties.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Location Data</h2>
-            <p>
-               The app uses location permissions only to display the user's position
-               and record tracks in GPX format.
-            </p>
-            <p>
-               Location data remains on the device and is not shared.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Data Storage</h2>
-            <p>
-               All user track data is stored locally on the user's device.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Contact</h2>
-            <p>
-               Questions:
                <a href="mailto:trackergpx@gmail.com">
                trackergpx@gmail.com
                </a>
