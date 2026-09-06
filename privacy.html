@@ -1,312 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Privacy Policy – GPXTracker</title>
-      <style>
-         body {
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         margin: 0;
-         padding: 0;
-         background-color: #f4f6f8;
-         color: #333;
-         }
-         header {
-         background-color: #2c3e50;
-         color: white;
-         padding: 20px;
-         text-align: center;
-         }
-         header h1 {
-         color: white;
-         }
-         main {
-         max-width: 800px;
-         margin: 40px auto;
-         padding: 20px;
-         background: white;
-         border-radius: 12px;
-         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-         }
-         h1, h2 {
-         color: #000;
-         }
-         h2 {
-         margin-top: 30px;
-         }
-         p, li {
-         font-size: 16px;
-         line-height: 1.6;
-         }
-         ul {
-         padding-left: 25px;
-         }
-         a {
-         color: #000;
-         text-decoration: none;
-         }
-         .section {
-         margin-bottom: 25px;
-         }
-         hr {
-         margin: 50px 0;
-         border: none;
-         border-top: 2px solid #ddd;
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <h1>Privacy Policy – GPXTracker</h1>
-      </header>
-      <main>
-         <div class="section">
-            <p>
-               Your privacy is important to us.
-               The <strong>GPXTracker</strong> application works mainly locally on the user's device.
-               Track files and location data are not transmitted to the app developers.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Firebase Analytics</h2>
-            <p>
-               The application uses the <strong>Google Firebase Analytics</strong> service
-               to collect anonymous statistics about application usage and to improve its operation. You can disable this at any time in the application settings.
-            </p>
-            <p>
-               Information about interactions with the application may be collected,
-               such as feature usage, screen openings, or interface button clicks.
-               This data is not used to identify the user.
-            </p>
-            <p>
-               The following data is not sent to Firebase Analytics:
-            </p>
-            <ul>
-               <li>user GPX tracks,</li>
-               <li>GPS coordinates,</li>
-               <li>user file names,</li>
-               <li>email addresses or contact information,</li>
-               <li>other data that could directly identify the user.</li>
-            </ul>
-         </div>
-         <div class="section">
-            <h2>GPX Files</h2>
-            <p>
-               The application saves and reads GPX files only locally on the user's device.
-               You can open existing GPX files from device storage or other available locations.
-            </p>
-            <p>
-               Data contained in GPX files is not transmitted to the app developers
-               or any external services.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Location Data</h2>
-            <p>
-               The application uses location permissions:
-               <code>ACCESS_COARSE_LOCATION</code>,
-               <code>ACCESS_FINE_LOCATION</code>,
-               and <code>ACCESS_BACKGROUND_LOCATION</code>
-               only to display the user's position on the map and save tracks in GPX format.
-            </p>
-            <p>
-               Location data remains on the user's device and is not transmitted
-               to any third parties.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Elevation Data (Optional)</h2>
-            <p>
-By default, the app uses local GPS data for elevation. If you explicitly enable the OpenTopoData service in settings, the app transmits a simplified, sampled subset of your coordinates (limited to 100 points per track) to opentopodata.org to retrieve high-precision topographic data (SRTM 30m). This minimizes data transmission while significantly improving the accuracy of your elevation profiles.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Permissions</h2>
-            <ul>
-               <li>
-                  <strong>Location:</strong>
-                  displaying the user's position on the map and recording tracks.
-               </li>
-               <li>
-                  <strong>Storage / files:</strong>
-                  saving and reading GPX files.
-               </li>
-            </ul>
-         </div>
-         <div class="section">
-            <h2>Data Storage</h2>
-            <p>
-               All data related to user tracks is stored locally on the user's device.
-               The application does not have its own server that stores user data.
-            </p>
-         </div>
-         <div class="section">
-            <h2>External Services</h2>
-            <p>
-               The application uses the following service:
-            </p>
-            <ul>
-               <li>
-                  <strong>OpenStreetMap</strong> – map data and tiles (map data is © OpenStreetMap contributors).
-               </li>
-               <li>
-                  <strong>Google Firebase Analytics</strong> – anonymous analysis of application usage.
-               </li>
-            </ul>
-            <p>
-               Information about Google's privacy practices is available in Google's documentation.
-            </p>
-         </div>
-         <div class="section">
-            <h2>User Age</h2>
-            <p>
-               The application is intended for users of all ages.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Contact</h2>
-            <p>
-               If you have any questions regarding this Privacy Policy,
-               you can contact:
-            </p>
-            <p>
-               <a href="mailto:trackergpx@gmail.com">
-               trackergpx@gmail.com
-               </a>
-            </p>
-         </div>
-         <hr>
-         <h1>Polityka prywatności – GPXTracker</h1>
-         <div class="section">
-            <p>
-               Twoja prywatność jest dla nas ważna.
-               Aplikacja <strong>GPXTracker</strong> działa głównie lokalnie na urządzeniu użytkownika.
-               Pliki tras oraz dane lokalizacyjne nie są przesyłane do twórców aplikacji.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Firebase Analytics</h2>
-            <p>
-               Aplikacja korzysta z usługi <strong>Google Firebase Analytics</strong>
-               w celu zbierania anonimowych statystyk dotyczących korzystania z aplikacji
-               oraz poprawy jej działania. Możesz wyłączyć to w ustawieniach.
-            </p>
-            <p>
-               Zbierane mogą być informacje dotyczące interakcji z aplikacją,
-               takie jak użycie funkcji, otwieranie ekranów lub kliknięcia elementów interfejsu.
-               Dane te nie służą do identyfikacji użytkownika.
-            </p>
-            <p>
-               Do Firebase Analytics nie są przesyłane dane takie jak:
-            </p>
-            <ul>
-               <li>trasy GPX użytkownika,</li>
-               <li>współrzędne GPS,</li>
-               <li>nazwy plików użytkownika,</li>
-               <li>adres e-mail ani dane kontaktowe,</li>
-               <li>inne dane pozwalające bezpośrednio zidentyfikować użytkownika.</li>
-            </ul>
-         </div>
-         <div class="section">
-            <h2>Pliki GPX</h2>
-            <p>
-               Aplikacja zapisuje i odczytuje pliki GPX wyłącznie lokalnie na urządzeniu użytkownika.
-               Możesz otwierać istniejące pliki GPX z pamięci urządzenia lub innych dostępnych lokalizacji.
-            </p>
-            <p>
-               Dane zawarte w plikach GPX nie są przesyłane do twórców aplikacji
-               ani do usług zewnętrznych.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Dane lokalizacji</h2>
-            <p>
-               Aplikacja korzysta z uprawnień lokalizacji:
-               <code>ACCESS_COARSE_LOCATION</code>,
-               <code>ACCESS_FINE_LOCATION</code>
-               oraz <code>ACCESS_BACKGROUND_LOCATION</code>
-               wyłącznie w celu wyświetlania pozycji użytkownika na mapie
-               oraz zapisywania tras w formacie GPX.
-            </p>
-            <p>
-               Dane lokalizacyjne pozostają na urządzeniu użytkownika
-               i nie są przesyłane do żadnych podmiotów zewnętrznych.
-            </p>
-         </div>
-         <div class="section">
-<h2>Dane wysokościowe (opcjonalne)</h2>
-<p>
-Domyślnie aplikacja wykorzystuje lokalne dane GPS do określania wysokości.
-Jeśli użytkownik wyraźnie włączy usługę OpenTopoData w ustawieniach,
-aplikacja przesyła uproszczony, próbkowany fragment współrzędnych trasy
-(ograniczony do maksymalnie 100 punktów na trasę) do opentopodata.org
-w celu pobrania bardzo dokładnych danych topograficznych
-(na podstawie zbioru danych SRTM 30 m).
-</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – GPX Tracks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav><strong>GPX Tracks</strong><div><a href="index.html">Start</a><a href="faq.html">FAQ</a><a href="privacy.html">Prywatność</a><a href="index-en.html">EN</a></div></nav></header>
+<main>
+<p class="updated">Last updated: 6 September 2026</p>
+<h2>Overview</h2>
+<p><strong>GPX Tracks</strong> is designed to process your routes and saved places locally on your device. The app does not require an account and does not operate a server that stores your GPX files, tracks or waypoints.</p>
 
-<p>
-Takie rozwiązanie ogranicza ilość przesyłanych danych,
-jednocześnie znacząco poprawiając dokładność profili wysokościowych tras.
-</p>
-         </div>
-         <div class="section">
-            <h2>Uprawnienia</h2>
-            <ul>
-               <li>
-                  <strong>Lokalizacja:</strong>
-                  wyświetlanie pozycji na mapie oraz zapis tras.
-               </li>
-               <li>
-                  <strong>Pamięć / pliki:</strong>
-                  zapis i odczyt plików GPX.
-               </li>
-            </ul>
-         </div>
-         <div class="section">
-            <h2>Przechowywanie danych</h2>
-            <p>
-               Wszystkie dane związane z trasami użytkownika są przechowywane lokalnie
-               na urządzeniu użytkownika.
-               Aplikacja nie posiada własnego serwera przechowującego dane użytkowników.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Usługi zewnętrzne</h2>
-            <p>
-               Aplikacja korzysta z usługi:
-            </p>
-            <ul>
-               <li>
-                  <strong>OpenStreetMap</strong>
-                  – dane mapy i kafelki (dane mapy © autorzy OpenStreetMap).
-               </li>
-               <li>
-                  <strong>Google Firebase Analytics</strong>
-                  – anonimowa analiza użycia aplikacji.
-               </li>
-            </ul>
-            <p>
-               Informacje dotyczące zasad prywatności Google dostępne są w dokumentacji Google.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Wiek użytkowników</h2>
-            <p>
-               Aplikacja jest przeznaczona dla użytkowników w każdym wieku.
-            </p>
-         </div>
-         <div class="section">
-            <h2>Kontakt</h2>
-            <p>
-               W razie pytań dotyczących polityki prywatności możesz skontaktować się pod adresem:
-            </p>
-            <p>
-               <a href="mailto:trackergpx@gmail.com">
-               trackergpx@gmail.com
-               </a>
-            </p>
-         </div>
-      </main>
-   </body>
+<h2>Firebase Analytics</h2>
+<p>GPX Tracks uses Google Firebase Analytics only for optional, non-location usage statistics. You can turn Analytics off at any time in the app settings. When enabled, Firebase may process app interactions, basic technical information, an installation identifier and a general region inferred from the network connection.</p>
+<p>GPX tracks, location coordinates, waypoint titles and descriptions, file names, email addresses and contact details are not sent to Firebase Analytics.</p>
+
+<h2>GPX files, tracks and waypoints</h2>
+<p>Recorded tracks, opened or imported GPX files, and saved waypoints — including titles, descriptions, icons and optional links to a track — are processed and stored locally on your device.</p>
+<p>Opening, importing, editing and exporting are local app operations. GPX Tracks does not upload this content to the developer or to an elevation service. If you share an exported file through Android or another app, the receiving app handles that copy according to its own policy.</p>
+
+<h2>Location data</h2>
+<p>The app uses <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code> and, when required for background recording, <code>ACCESS_BACKGROUND_LOCATION</code> to display your position and record tracks. Recorded location points remain in the local database on your device.</p>
+<p>GPX Tracks does not send recorded coordinates, waypoint coordinates or route history to the developer. Online map providers may receive requests for the map area you view and normal network metadata. Those requests are governed by the providers’ own policies. Downloaded offline map data, when enabled, is read locally from your device.</p>
+
+<h2>Elevation data</h2>
+<p>Track elevation statistics use altitude recorded by your device’s GPS. Calculations are performed locally. GPX Tracks does not send track coordinates to an external elevation API.</p>
+
+<h2>Map data and external services</h2>
+<p>Online maps use OpenStreetMap data and the configured map tile provider. Viewing online maps requires an internet connection and may send the requested map area and standard network metadata to that provider. Offline map data, when enabled, is read from local files.</p>
+<p>Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</p>
+
+<h2>Permissions</h2>
+<ul><li><strong>Location:</strong> displaying your position and recording tracks.</li><li><strong>Files:</strong> opening, reading and exporting GPX files.</li></ul>
+
+<h2>Storage and deletion</h2>
+<p>Routes, location points, statistics, folders and waypoints are stored locally on your device. You can delete local tracks and hide deleted waypoints using the app controls. Android or your chosen backup provider may retain backups according to your device and account settings.</p>
+<p>Because GPX Tracks does not send route or waypoint content to the developer or an elevation service, there is no developer-side copy of that content to delete. Exported or shared files are handled by the destination you choose.</p>
+
+<h2>Children</h2>
+<p>The app is intended for users of all ages and does not knowingly collect personal information from children.</p>
+
+<h2>Changes and contact</h2>
+<p>If the app’s data practices change, this policy will be updated before or when the relevant feature is released. Questions can be sent to <a href="mailto:trackergpx@gmail.com">trackergpx@gmail.com</a>.</p>
+
+<hr>
+<h1>Polityka prywatności – GPX Tracks</h1>
+<p class="updated">Ostatnia aktualizacja: 6 września 2026 r.</p>
+<h2>Informacje ogólne</h2>
+<p><strong>GPX Tracks</strong> została zaprojektowana tak, aby przetwarzać trasy i zapisane miejsca lokalnie na urządzeniu. Aplikacja nie wymaga konta i nie prowadzi serwera przechowującego pliki GPX, trasy ani waypointy.</p>
+
+<h2>Firebase Analytics</h2>
+<p>GPX Tracks korzysta z Google Firebase Analytics wyłącznie do opcjonalnych, niezawierających lokalizacji statystyk użycia. Możesz wyłączyć Analytics w ustawieniach aplikacji. Gdy jest włączone, Firebase może przetwarzać interakcje z aplikacją, podstawowe informacje techniczne, identyfikator instalacji i ogólny region ustalony na podstawie połączenia sieciowego.</p>
+<p>Do Firebase Analytics nie są wysyłane trasy GPX, współrzędne, tytuły ani opisy waypointów, nazwy plików, adresy e-mail ani dane kontaktowe.</p>
+
+<h2>Pliki GPX, trasy i waypointy</h2>
+<p>Nagrane trasy, otwierane lub importowane pliki GPX oraz zapisane waypointy — w tym ich tytuły, opisy, ikony i opcjonalne powiązania z trasą — są przetwarzane i przechowywane lokalnie na urządzeniu.</p>
+<p>Otwieranie, importowanie, edycja i eksport są operacjami lokalnymi. GPX Tracks nie przesyła tych treści do twórcy ani do usługi wysokościowej. Udostępniony plik jest obsługiwany przez wybraną aplikację odbierającą.</p>
+
+<h2>Dane lokalizacyjne</h2>
+<p>Aplikacja korzysta z uprawnień <code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code> oraz — gdy jest potrzebne nagrywanie w tle — <code>ACCESS_BACKGROUND_LOCATION</code>, aby wyświetlać pozycję i nagrywać trasy. Zapisane punkty lokalizacji pozostają w lokalnej bazie na urządzeniu.</p>
+<p>GPX Tracks nie wysyła do twórcy zapisanych współrzędnych, współrzędnych waypointów ani historii tras. Dostawcy map online mogą otrzymywać żądania dotyczące oglądanego obszaru i standardowe dane sieciowe zgodnie z ich politykami. Pobrane mapy offline, gdy funkcja jest włączona, są odczytywane lokalnie.</p>
+
+<h2>Dane wysokościowe</h2>
+<p>Statystyki wysokości korzystają z wysokości zapisanej przez GPS urządzenia. Obliczenia są wykonywane lokalnie. GPX Tracks nie wysyła współrzędnych trasy do zewnętrznego API wysokościowego.</p>
+
+<h2>Dane map i usługi zewnętrzne</h2>
+<p>Mapy online korzystają z danych OpenStreetMap i skonfigurowanego dostawcy kafelków. Wyświetlanie map online wymaga internetu i może wysyłać do dostawcy oglądany obszar oraz standardowe dane sieciowe. Mapy offline, gdy funkcja jest włączona, są odczytywane z lokalnych plików.</p>
+<p>Dane mapy © <a href="https://www.openstreetmap.org/copyright">autorzy OpenStreetMap</a>.</p>
+
+<h2>Uprawnienia</h2>
+<ul><li><strong>Lokalizacja:</strong> wyświetlanie pozycji i nagrywanie tras.</li><li><strong>Pliki:</strong> otwieranie, odczyt i eksport plików GPX.</li></ul>
+
+<h2>Przechowywanie i usuwanie danych</h2>
+<p>Trasy, punkty lokalizacji, statystyki, katalogi i waypointy są przechowywane lokalnie na urządzeniu. Możesz usuwać lokalne trasy i ukrywać usunięte waypointy za pomocą elementów aplikacji. Android lub wybrana usługa kopii zapasowych może przechowywać kopie zgodnie z ustawieniami urządzenia i konta.</p>
+<p>Ponieważ GPX Tracks nie wysyła treści tras ani waypointów do twórcy ani do usługi wysokościowej, po stronie twórcy nie ma kopii tych treści do usunięcia. Wyeksportowane lub udostępnione pliki obsługuje wybrane miejsce docelowe.</p>
+
+<h2>Dzieci</h2><p>Aplikacja jest przeznaczona dla użytkowników w każdym wieku i nie zbiera świadomie danych osobowych dzieci.</p>
+<h2>Zmiany i kontakt</h2><p>Jeżeli zasady przetwarzania danych się zmienią, zaktualizujemy tę politykę przed udostępnieniem lub wraz z odpowiednią funkcją. Pytania można wysłać na adres <a href="mailto:trackergpx@gmail.com">trackergpx@gmail.com</a>.</p>
+</main>
+</body>
 </html>
