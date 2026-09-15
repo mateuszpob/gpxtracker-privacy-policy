@@ -5,7 +5,7 @@ Weryfikacja: 2026-09-15.
 ## Stan
 
 - To ogólna strona aplikacji, z oddzielną polityką prywatności. Wersja EN: `index.html` i zgodny starszy adres `index-en.html`; samouczek: `waypoints-en.html`; pomoc: `faq-en.html`.
-- Dotychczasową stronę PL zachowano jako `index-pl.html`. Nowy poradnik i rozbudowa treści PL pozostają na późniejszy etap zgodnie z prośbą użytkownika. Polskie FAQ i polityka zachowują swoje adresy.
+- Wersja PL jest kompletna: `index-pl.html`, `waypoints-pl.html`, `faq.html` i `privacy.html`. Strona główna, poradnik i FAQ odpowiadają układowi EN; korzystają z właściwych grafik `assets/pl/`. Nazwy przycisków aplikacji w poradniku pozostają po angielsku z polskim objaśnieniem. Przełączniki EN/PL prowadzą do odpowiadających podstron; dodano odnośniki hreflang. Domyślny `index.html` nadal jest angielski.
 - `privacy-en.html` i `privacy.html` pozostają bezpośrednimi, samodzielnymi dokumentami. Zmieniono oprawę i nawigację; nie przepisywano treści polityki ani daty jej aktualizacji.
 - Wszystkie grafiki znajdują się w repozytorium. `assets/en/` i `assets/pl/`: po 9 PNG (7 ekranów z dostarczonego katalogu oraz 2 starsze materiały promocyjne). Mapa bez widocznych nazw użytkownika została skopiowana bez zmian. Pozostałe ekrany mają przykładowe nazwy i opisy; UI pozostaje po angielsku, zgodnie z aplikacją.
 - Edycje wykonano wbudowanym image_gen. Prompty: `assets/IMAGE-PROMPTS.md`. To ilustracje na podstawie prawdziwych zrzutów, po edycji generatywnej, a nie zrzuty wykonane ponownie na urządzeniu. Strona informuje o przykładowych nazwach; poradnik rozróżnia edycję istniejącego punktu od dodawania nowego.
@@ -19,10 +19,11 @@ Poradnik zweryfikowano z `mapka/app/src/main/java/pl/smolisoft/mapka/core/ui/Way
 
 ## Publikacja
 
-Nie wykonano commita ani pusha. Repozytorium miało już zmiany w indeksie przed tą sesją; zachowano je. Przy publikacji link do polityki w Google powinien wskazywać sam `privacy-en.html` lub `privacy.html` na hostowanej stronie, nie stronę główną. Nie zmieniano Play Console ani konfiguracji hostingu.
+Agent nie wykonał commita ani pusha. Przed rozbudową PL katalog roboczy repozytorium strony był czysty; wcześniejsze prace EN były już zapisane w Git. Przy publikacji link do polityki w Google powinien wskazywać sam `privacy-en.html` lub `privacy.html` na hostowanej stronie, nie stronę główną. Nie zmieniano Play Console ani konfiguracji hostingu.
 
 ## Weryfikacja
 
-- Kontrola 8 stron HTML: wszystkie lokalne pliki, odnośniki, kotwice i obrazy istnieją; każda strona ma jeden H1, a obrazy tekst alternatywny. `git diff --check` bez błędów.
+- Po rozbudowie PL: kontrola 9 stron HTML: wszystkie lokalne pliki, odnośniki, kotwice i obrazy istnieją; każda strona ma jeden H1, a obrazy tekst alternatywny. `git diff --check` bez błędów.
 - Ręczny przegląd wygenerowanych obrazów oraz renderów Firefoksa: strona główna 1440×1050 i 390×1500, poradnik 1440×1600, polityka 390×1400. Brak zauważonych problemów w tych widokach. Nie przeprowadzono pełnych testów interakcji na fizycznym telefonie.
+- Wersja PL: rendery Firefoksa dla strony głównej 1440×1050 i 390×1500, poradnika 390×1800, FAQ 1440×1500 i polityki 390×1400. Bez zauważonych problemów w tych widokach. Sprawdzono zgodność układu sekcji z EN, komplet 9 właściwych grafik PL, wzajemne przełączniki języka i niezmienioną treść polskiej polityki.
 - Kompilacja Androida nie dotyczy zadania; kod aplikacji nie został zmieniony.
