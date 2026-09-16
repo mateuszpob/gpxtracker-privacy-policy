@@ -1,6 +1,8 @@
 # Historia zmian strony GPX Tracks
 
-## Niewydane — 2026-09-15
+## Niewydane — 2026-09-16
+
+- Delikatne tło mapowe z trasami w turkusie, pomarańczu i fiolecie wypełnia przestrzeń między sekcjami, zachowując czytelność treści.
 
 - Pogodniejszy wygląd obu wersji językowych: jasne tło, słoneczny krajobraz z trasą, pastelowe karty i kolorowe ikony funkcji.
 

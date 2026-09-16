@@ -1,6 +1,12 @@
 # Strona GPX Tracks — kontekst
 
-Weryfikacja: 2026-09-15.
+Weryfikacja: 2026-09-16.
+
+## Tło mapowe — 2026-09-16
+
+- `assets/map-tracks-background.png` to wygenerowana przez image_gen fikcyjna mapa z trzema trasami (turkus, pomarańcz, fiolet), bez nazw i danych użytkownika. Jest nieruchomym tłem całej strony pod treścią; jasna warstwa CSS zmniejsza kontrast, mocniej na telefonie.
+- Zachowano krajobraz nagłówków, układ, wszystkie teksty i dotychczasowe grafiki. Zmiana wspólnego CSS obejmuje EN i PL.
+- Sprawdzono odnośniki, zasoby i `git diff --check`; rendery Firefoksa: strona główna PL 1440×1250, FAQ PL 390×1500, polityka EN 1440×1000.
 
 ## Pogodniejsza oprawa — 2026-09-15
 
