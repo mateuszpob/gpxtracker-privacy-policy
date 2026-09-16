@@ -63,3 +63,9 @@ Precisely edit this actual Android GPX Tracks screenshot. Keep complete portrait
 Precisely edit this actual Android GPX Tracks screenshot. Keep complete portrait composition, all original UI labels IN ENGLISH, map, distances, controls, icons, attribution and geometry. Change only user-entered text as requested, including any faint background user labels where present. Do not invent functionality or add overlays. Replace six user route names, top to bottom, with 'Wiejska pętla', 'Wieczorny spacer', 'Niedzielna wyprawa', 'Doliną rzeki', 'Leśna przygoda', 'Popołudnie nad rzeką'.
 
 Mapa w obu katalogach jest kopią oryginalnego zrzutu bez edycji, ponieważ nie zawiera widocznych nazw użytkownika. Angielski tracks-explorer.png pochodzi z wcześniejszej grafiki.
+
+## sunny-trail.png — pogodny motyw strony
+
+Wbudowane image_gen; odniesienie stylistyczne: `gpx-tracker/super/ChatGPT Image 3 sie 2026, 22_02_24.png`. Ilustracja dekoracyjna, wspólna dla EN/PL, bez napisów.
+
+Use the supplied GPX Tracks artwork as a STYLE REFERENCE for its sculpted miniature terrain and winding coral red route. Create a new panoramic 1536x1024 landscape illustration for a cheerful outdoor app website. A sunny, fresh spring green valley, tiny clustered trees, grassy hills, a turquoise river and a pale warm blue sky. A thin coral-orange route follows the terrain to one tasteful red map pin. Premium tactile miniature landscape, elegant restrained editorial illustration, softly sunlit, optimistic and inviting. Lighter and much happier than reference. Broad layered hills, subtle contour lines in terrain, not overly busy. Landscape composition filling frame, broad open pale sky in top third, focal pin right of centre. No phones, no UI, no text, no labels, no logos, no black background, no neon glow. This is a decorative landscape, not a screenshot or an actual map. Save as one raster asset.

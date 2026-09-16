@@ -2,6 +2,12 @@
 
 Weryfikacja: 2026-09-15.
 
+## Pogodniejsza oprawa — 2026-09-15
+
+- Wspólny motyw EN/PL rozjaśniono: kremowe tło, ciemnozielony tekst, limonkowe przyciski oraz pastelowe karty z akcentami turkusu i moreli.
+- `assets/sunny-trail.png` to słoneczny krajobraz wygenerowany image_gen na podstawie motywu miniaturowego terenu i czerwonej trasy z wcześniejszej grafiki w `gpx-tracker/super/`. Jedna ilustracja bez napisów służy jako tło nagłówków w obu językach. Karty funkcji dostały trzy dekoracyjne ikony SVG; pozostałe grafiki zachowano.
+- Automatycznie porównano tekst wszystkich dziewięciu stron przed i po zmianie: treść zachowana. Sprawdzono zasoby, odnośniki, kotwice i `git diff --check`. Obejrzano rendery Firefoksa EN/PL na komputerze oraz PL na szerokości 390 px (start, poradnik, FAQ i polityka w odpowiednich widokach).
+
 ## Stan
 
 - To ogólna strona aplikacji, z oddzielną polityką prywatności. Wersja EN: `index.html` i zgodny starszy adres `index-en.html`; samouczek: `waypoints-en.html`; pomoc: `faq-en.html`.
