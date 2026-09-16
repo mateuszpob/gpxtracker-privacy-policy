@@ -2,9 +2,14 @@
 
 Weryfikacja: 2026-09-16.
 
+## Paralaksa — 2026-09-16
+
+- Wszystkie 9 stron ładuje lokalny `parallax.js` z `defer`. Tło przesuwa się w górę maksymalnie o 12% przewinięcia, łącznie do 320 px, proporcjonalnie do postępu całej strony. CSS zapewnia zapas grafiki.
+- Pasywny scroll i requestAnimationFrame aktualizują transform; ResizeObserver uwzględnia obrazy i rozwijanie FAQ. prefers-reduced-motion wyłącza ruch i zapas grafiki; bez JS pozostaje nieruchome tło.
+
 ## Tło mapowe — 2026-09-16
 
-- `assets/map-tracks-background.png` to wygenerowana przez image_gen fikcyjna mapa z trzema trasami (turkus, pomarańcz, fiolet), bez nazw i danych użytkownika. Jest nieruchomym tłem całej strony pod treścią; jasna warstwa CSS zmniejsza kontrast, mocniej na telefonie.
+- `assets/map-tracks-background.png` to wygenerowana przez image_gen fikcyjna mapa z trzema trasami (turkus, pomarańcz, fiolet), bez nazw i danych użytkownika. Jest tłem całej strony pod treścią; jasna warstwa CSS zmniejsza kontrast, mocniej na telefonie.
 - Zachowano krajobraz nagłówków, układ, wszystkie teksty i dotychczasowe grafiki. Zmiana wspólnego CSS obejmuje EN i PL.
 - Sprawdzono odnośniki, zasoby i `git diff --check`; rendery Firefoksa: strona główna PL 1440×1250, FAQ PL 390×1500, polityka EN 1440×1000.
 

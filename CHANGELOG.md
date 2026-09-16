@@ -2,6 +2,8 @@
 
 ## Niewydane — 2026-09-16
 
+- Tło mapowe delikatnie przesuwa się wolniej niż treść na wszystkich stronach PL i EN. Efekt respektuje systemowe ograniczenie animacji.
+
 - Delikatne tło mapowe z trasami w turkusie, pomarańczu i fiolecie wypełnia przestrzeń między sekcjami, zachowując czytelność treści.
 
 - Pogodniejszy wygląd obu wersji językowych: jasne tło, słoneczny krajobraz z trasą, pastelowe karty i kolorowe ikony funkcji.

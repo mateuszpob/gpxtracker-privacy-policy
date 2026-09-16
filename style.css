@@ -20,6 +20,8 @@
 @media(max-width:900px){.landing-hero{gap:26px;padding:30px 22px}.hero-device{max-width:230px}.page-heading{padding-right:18%}}
 @media(max-width:640px){.landing-hero{margin-left:-6px;margin-right:-6px;padding:28px 20px;background:linear-gradient(180deg,#f7faed 0%,#f7faed 40%,#f7faedbd 56%,#f7faed10 80%),url('assets/sunny-trail.png') center bottom/auto 58% no-repeat}.hero-copy h1{font-size:clamp(34px,10.8vw,43px)}.floating-note{left:-24px;right:-24px}.value-strip{padding:20px}.page-heading{padding:40px 0 30px;background:linear-gradient(90deg,#f8f9f0f5,#f8f9f0d9),url('assets/sunny-trail.png') center/cover}.faq-list{padding:5px 18px}.steps li{padding-top:20px}.library-feature figure{transform:none}}
 
-/* Nieruchoma mapa w tle wypełnia odstępy; jasna warstwa zachowuje czytelność tekstu. */
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(#f8f9f073,#f8f9f073),url('assets/map-tracks-background.png') center/cover no-repeat}
+/* Zapas pod ekranem pozwala przesuwać mapę wolniej od treści bez odsłaniania jej krawędzi. */
+body:before{content:"";position:fixed;inset:0 0 calc(-1 * var(--map-travel, 0px));transform:translate3d(0,var(--map-offset, 0px),0);z-index:-1;pointer-events:none;background:linear-gradient(#f8f9f073,#f8f9f073),url('assets/map-tracks-background.png') center/cover no-repeat}
 @media(max-width:640px){body:before{background-image:linear-gradient(#f8f9f09c,#f8f9f09c),url('assets/map-tracks-background.png');background-position:42% center}}
+
+@media(prefers-reduced-motion:reduce){body:before{inset:0;transform:none}}
