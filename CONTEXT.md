@@ -2,6 +2,12 @@
 
 Weryfikacja: 2026-09-19.
 
+## Korekta stylu poradnika waypointów — 2026-09-19
+
+- Poradniki EN/PL mają klasę guide-page i dedykowane reguły CSS: jasne panele pod krokami, mniejsze odstępy, poprawione proporcje kolumn, nagłówek z wewnętrznym marginesem i układ jednokolumnowy na telefonie. Zrzuty zachowane w całości, bez kadrowania.
+- Style ograniczone do guide-page. Odnośnik CSS poradników ma wersję v=20260919-guide, aby odświeżyć cache po publikacji.
+- Sprawdzono render Firefox PL 1440×1800 i EN 390×1800; tekst i zdjęcia mieszczą się, tło nie utrudnia czytania. git diff --check bez błędów. Bez publikacji.
+
 ## Kontrola przed publikacją 1.2.6 — 2026-09-19
 
 - Google Play API potwierdza produkcję 1.2.6 (30), completed. Polska lokalizacja aplikacji pozostaje na osobnym branchu, poradnik nadal używa angielskich nazw przycisków.

@@ -19,3 +19,5 @@
 
 ## 2026-09-19
 - Dostosowano stronę do wydania 1.2.6: pierwszeństwo braku konta oraz GPX, bez zbędnych dopisków o internecie. Doprecyzowano zakres map w politykach i ilustracyjny charakter zrzutów. Brak odniesień do API wysokości. Zmiany przygotowane lokalnie.
+
+- Poprawiono wygląd poradnika waypointów PL/EN: jasne panele, czytelniejsze instrukcje, spójne odstępy i lepszy układ na telefonie.

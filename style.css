@@ -25,3 +25,20 @@ body:before{content:"";position:fixed;inset:0 0 calc(-1 * var(--map-travel, 0px)
 @media(max-width:640px){body:before{background-image:linear-gradient(#f8f9f09c,#f8f9f09c),url('assets/map-tracks-background.png');background-position:42% center}}
 
 @media(prefers-reduced-motion:reduce){body:before{inset:0;transform:none}}
+
+/* Poradnik potrzebuje jednolitego podkładu pod instrukcją, aby mapa nie konkurowała z tekstem. */
+.guide-page .page-heading{margin-top:32px;padding:44px 38% 36px 40px;border:1px solid var(--line);border-radius:24px;background-color:var(--bg)}
+.guide-page .page-heading h1{font-size:clamp(38px,4.8vw,64px)}
+.guide-page .page-heading .lead{font-size:19px}
+.guide-page .guide-step{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:48px;margin:32px 0;padding:40px;background:#fffef8;border:1px solid var(--line);border-radius:24px;box-shadow:0 12px 32px #36583b0d}
+.guide-page .guide-step>div{min-width:0;max-width:560px}
+.guide-page .guide-step h2{font-size:clamp(28px,3vw,40px);text-wrap:balance}
+.guide-page .guide-step .eyebrow{margin-bottom:18px}
+.guide-page .guide-step .phone-shot{width:100%;max-width:250px;min-width:0}
+.guide-page .guide-step .phone-shot img{background:var(--panel);border:1px solid #9fb69d;box-shadow:0 12px 28px #36583b20}
+.guide-page .guide-step .phone-shot figcaption{color:var(--muted);line-height:1.5}
+.guide-page .tip{margin-bottom:0;border-radius:0 10px 10px 0}
+.guide-page main>section:not(.guide-step){background:#fffef8;border:1px solid var(--line);border-radius:24px;padding:36px 40px;margin:32px 0}
+.guide-page .closing h2{margin-top:0}
+@media(max-width:900px){.guide-page .page-heading{padding:32px 25% 30px 30px}.guide-page .guide-step{gap:28px;padding:30px}}
+@media(max-width:640px){.guide-page main{padding:0 16px 32px}.guide-page .page-heading{margin-top:20px;padding:28px 22px;border-radius:18px}.guide-page .page-heading h1{font-size:clamp(32px,9vw,43px)}.guide-page .page-heading .lead{font-size:18px}.guide-page .guide-step{grid-template-columns:minmax(0,1fr);gap:24px;padding:26px 22px;margin:22px 0;border-radius:18px}.guide-page .guide-step .phone-shot{max-width:240px}.guide-page .guide-step p,.guide-page .guide-step strong{overflow-wrap:anywhere}.guide-page main>section:not(.guide-step){padding:26px 22px;border-radius:18px;margin:22px 0}.guide-page .grid{grid-template-columns:minmax(0,1fr)}.guide-page .tip{padding:14px 16px}.guide-page .eyebrow{letter-spacing:.12em}}
