@@ -1,6 +1,18 @@
 # Strona GPX Tracks — kontekst
 
-Weryfikacja: 2026-09-16.
+Weryfikacja: 2026-09-19.
+
+## Kontrola przed publikacją 1.2.6 — 2026-09-19
+
+- Google Play API potwierdza produkcję 1.2.6 (30), completed. Polska lokalizacja aplikacji pozostaje na osobnym branchu, poradnik nadal używa angielskich nazw przycisków.
+- W 9 HTML nie ma OpenTopoData ani API wysokości; wysokość pochodzi z GPS i jest liczona lokalnie. Usunięto hipotetyczne wzmianki o włączonych mapach offline z polityk, zachowując informację o żądaniach map i opcjonalnym Analytics.
+- Uporządkowano pierwsze komunikaty stron głównych: bez konta → GPX → nagrywanie → miejsca. Usunięto marketingowe dopiski o wymaganym internecie. Zachowano styl i grafiki.
+- Sprawdzono 9 plików HTML: odnośniki lokalne, kotwice i istnienie wszystkich 18 użytych grafik; brak błędów, git diff --check poprawny. Nie wykonywano nowego renderu przeglądarki.
+- Materiały są lokalne; użytkownik publikuje stronę sam. Bez commita/pusha.
+
+## Teksty wysokości — 2026-09-16
+
+- Przejrzano treści wszystkich 9 stron i materiały `mapka/marketing/premiera_waypointow`. W FAQ i politykach PL/EN usunięto odniesienia do nieistniejącego API/usługi wysokościowej, również zdania o braku wysyłania do niej danych. Pozostał opis lokalnych pomiarów GPS i obliczeń. Daty polityk: 16 września 2026. Informacje o mapach online i Firebase pozostają.
 
 ## Paralaksa — 2026-09-16
 
@@ -23,7 +35,7 @@ Weryfikacja: 2026-09-16.
 
 - To ogólna strona aplikacji, z oddzielną polityką prywatności. Wersja EN: `index.html` i zgodny starszy adres `index-en.html`; samouczek: `waypoints-en.html`; pomoc: `faq-en.html`.
 - Wersja PL jest kompletna: `index-pl.html`, `waypoints-pl.html`, `faq.html` i `privacy.html`. Strona główna, poradnik i FAQ odpowiadają układowi EN; korzystają z właściwych grafik `assets/pl/`. Nazwy przycisków aplikacji w poradniku pozostają po angielsku z polskim objaśnieniem. Przełączniki EN/PL prowadzą do odpowiadających podstron; dodano odnośniki hreflang. Domyślny `index.html` nadal jest angielski.
-- `privacy-en.html` i `privacy.html` pozostają bezpośrednimi, samodzielnymi dokumentami. Zmieniono oprawę i nawigację; nie przepisywano treści polityki ani daty jej aktualizacji.
+- `privacy-en.html` i `privacy.html` pozostają bezpośrednimi, samodzielnymi dokumentami. Oprawa i nawigacja są wspólne ze stroną; 2026-09-16 uproszczono opis wysokości i zaktualizowano datę polityki.
 - Wszystkie grafiki znajdują się w repozytorium. `assets/en/` i `assets/pl/`: po 9 PNG (7 ekranów z dostarczonego katalogu oraz 2 starsze materiały promocyjne). Mapa bez widocznych nazw użytkownika została skopiowana bez zmian. Pozostałe ekrany mają przykładowe nazwy i opisy; UI pozostaje po angielsku, zgodnie z aplikacją.
 - Edycje wykonano wbudowanym image_gen. Prompty: `assets/IMAGE-PROMPTS.md`. To ilustracje na podstawie prawdziwych zrzutów, po edycji generatywnej, a nie zrzuty wykonane ponownie na urządzeniu. Strona informuje o przykładowych nazwach; poradnik rozróżnia edycję istniejącego punktu od dodawania nowego.
 - Starsze grafiki pochodzą z `/home/mp/work/gpx-tracker/super/`; nowe ekrany z `/home/mp/work/gpx-tracker/screenshots-waypointy/`. Oryginały nie zostały nadpisane.

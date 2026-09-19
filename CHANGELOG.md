@@ -2,6 +2,8 @@
 
 ## Niewydane — 2026-09-16
 
+- Uproszczono FAQ i politykę prywatności PL/EN: wysokość pochodzi z GPS urządzenia, a statystyki są obliczane lokalnie.
+
 - Tło mapowe delikatnie przesuwa się wolniej niż treść na wszystkich stronach PL i EN. Efekt respektuje systemowe ograniczenie animacji.
 
 - Delikatne tło mapowe z trasami w turkusie, pomarańczu i fiolecie wypełnia przestrzeń między sekcjami, zachowując czytelność treści.
@@ -13,3 +15,7 @@
 - Grafiki z przykładowymi nazwami miejsc i tras w wersjach EN i PL, oparte na dostarczonych zrzutach oraz wcześniejszych materiałach promocyjnych.
 - Układ dopasowany do telefonu i komputera, czytelniejsze kolory, obsługa klawiatury i powiększanie zrzutów.
 - Polityka prywatności pozostaje pod oddzielnymi adresami EN i PL. Przełącznik języka prowadzi do odpowiadającej podstrony EN lub PL.
+
+
+## 2026-09-19
+- Dostosowano stronę do wydania 1.2.6: pierwszeństwo braku konta oraz GPX, bez zbędnych dopisków o internecie. Doprecyzowano zakres map w politykach i ilustracyjny charakter zrzutów. Brak odniesień do API wysokości. Zmiany przygotowane lokalnie.
