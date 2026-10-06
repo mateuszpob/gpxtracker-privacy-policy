@@ -1,6 +1,12 @@
 # Strona GPX Tracks — kontekst
 
-Weryfikacja: 2026-09-19.
+Weryfikacja: 2026-10-05.
+
+## Brak analityki — 2026-10-05
+
+- Strony główne PL/EN, FAQ oraz polityki prywatności informują, że GPX Tracks nie korzysta z analityki i nie zbiera statystyk użycia. Usunięto bieżące opisy Firebase oraz nieistniejącego przełącznika w ustawieniach.
+- Polityki mają datę 5 października 2026 r. i opisują aktualne uprawnienia `ACCESS_COARSE_LOCATION`/`ACCESS_FINE_LOCATION` oraz kontynuację nagrywania przez usługę pierwszoplanową, bez `ACCESS_BACKGROUND_LOCATION`.
+- Nie zmieniano hostingu ani niczego nie publikowano. Nieśledzone pliki diagnostyczne należące do użytkownika pozostawiono bez zmian.
 
 ## Korekta stylu poradnika waypointów — 2026-09-19
 
@@ -42,10 +48,10 @@ Weryfikacja: 2026-09-19.
 - To ogólna strona aplikacji, z oddzielną polityką prywatności. Wersja EN: `index.html` i zgodny starszy adres `index-en.html`; samouczek: `waypoints-en.html`; pomoc: `faq-en.html`.
 - Wersja PL jest kompletna: `index-pl.html`, `waypoints-pl.html`, `faq.html` i `privacy.html`. Strona główna, poradnik i FAQ odpowiadają układowi EN; korzystają z właściwych grafik `assets/pl/`. Nazwy przycisków aplikacji w poradniku pozostają po angielsku z polskim objaśnieniem. Przełączniki EN/PL prowadzą do odpowiadających podstron; dodano odnośniki hreflang. Domyślny `index.html` nadal jest angielski.
 - `privacy-en.html` i `privacy.html` pozostają bezpośrednimi, samodzielnymi dokumentami. Oprawa i nawigacja są wspólne ze stroną; 2026-09-16 uproszczono opis wysokości i zaktualizowano datę polityki.
-- Wszystkie grafiki znajdują się w repozytorium. `assets/en/` i `assets/pl/`: po 9 PNG (7 ekranów z dostarczonego katalogu oraz 2 starsze materiały promocyjne). Mapa bez widocznych nazw użytkownika została skopiowana bez zmian. Pozostałe ekrany mają przykładowe nazwy i opisy; UI pozostaje po angielsku, zgodnie z aplikacją.
+- Wszystkie grafiki znajdują się w repozytorium. `assets/en/` i `assets/pl/`: po 9 PNG (7 ekranów z dostarczonego katalogu oraz 2 starsze materiały promocyjne). Mapa bez widocznych nazw użytkownika została skopiowana bez zmian. Pozostałe ekrany mają przykładowe nazwy i opisy; interfejs na tych materiałach pozostaje po angielsku, choć aplikacja obsługuje obecnie PL/EN/IT/FR/DE.
 - Edycje wykonano wbudowanym image_gen. Prompty: `assets/IMAGE-PROMPTS.md`. To ilustracje na podstawie prawdziwych zrzutów, po edycji generatywnej, a nie zrzuty wykonane ponownie na urządzeniu. Strona informuje o przykładowych nazwach; poradnik rozróżnia edycję istniejącego punktu od dodawania nowego.
 - Starsze grafiki pochodzą z `/home/mp/work/gpx-tracker/super/`; nowe ekrany z `/home/mp/work/gpx-tracker/screenshots-waypointy/`. Oryginały nie zostały nadpisane.
-- W banerze zastąpiono absolutne hasło prywatności informacją o lokalnym przechowywaniu tras i waypointów. Zachowano informację o opcjonalnym Firebase Analytics i żądaniach do map online.
+- Strony informują o lokalnym przechowywaniu tras i waypointów, braku analityki oraz żądaniach wysyłanych do dostawców map online. Nie zawierają już bieżących opisów Firebase ani przełącznika analityki.
 - Bez nowych zewnętrznych skryptów, fontów, trackerów ani zależności. FAQ używa natywnego details/summary; powiększanie grafik przez odnośnik do pliku działa bez JS.
 
 ## Sprawdzenie funkcji
