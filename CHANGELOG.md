@@ -1,7 +1,8 @@
 # Historia zmian strony GPX Tracks
 
-## Niewydane — 2026-10-05
+## Niewydane — 2026-10-06
 
+- Po końcowym przeglądzie wersji 1.2.9 polityka PL/EN wprost informuje o usunięciu Firebase Analytics i dokładniej opisuje lokalne przechowywanie usuniętych waypointów oraz kopie zapasowe Androida.
 - Usunięto informacje o Firebase z polskiej i angielskiej strony, FAQ oraz polityki prywatności. Teksty informują teraz, że aplikacja nie korzysta z analityki ani nie zbiera statystyk użycia.
 - Polityka opisuje aktualne uprawnienia lokalizacji bez nieużywanego `ACCESS_BACKGROUND_LOCATION`.
 

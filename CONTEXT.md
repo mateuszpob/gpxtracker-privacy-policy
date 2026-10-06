@@ -1,12 +1,17 @@
 # Strona GPX Tracks — kontekst
 
-Weryfikacja: 2026-10-05.
+Weryfikacja: 2026-10-06.
 
-## Brak analityki — 2026-10-05
+## Brak analityki — 2026-10-06
 
 - Strony główne PL/EN, FAQ oraz polityki prywatności informują, że GPX Tracks nie korzysta z analityki i nie zbiera statystyk użycia. Usunięto bieżące opisy Firebase oraz nieistniejącego przełącznika w ustawieniach.
-- Polityki mają datę 5 października 2026 r. i opisują aktualne uprawnienia `ACCESS_COARSE_LOCATION`/`ACCESS_FINE_LOCATION` oraz kontynuację nagrywania przez usługę pierwszoplanową, bez `ACCESS_BACKGROUND_LOCATION`.
-- Nie zmieniano hostingu ani niczego nie publikowano. Nieśledzone pliki diagnostyczne należące do użytkownika pozostawiono bez zmian.
+- Polityki mają datę 6 października 2026 r. i opisują aktualne uprawnienia `ACCESS_COARSE_LOCATION`/`ACCESS_FINE_LOCATION` oraz kontynuację nagrywania przez usługę pierwszoplanową, bez `ACCESS_BACKGROUND_LOCATION`.
+- Podstawową aktualizację bez Firebase opublikowano w commicie `1027a09`. Końcowe doprecyzowania dla wersji 1.2.9 są przygotowane do publikacji. Nieśledzone pliki diagnostyczne należące do użytkownika pozostają bez zmian.
+
+## Końcowy przegląd wydania 1.2.9 — 2026-10-06
+
+- Porównano polityki PL/EN z manifestem, zależnościami i zachowaniem wersji 1.2.9. Polityka wprost mówi teraz o usunięciu Firebase Analytics, lokalnym zapisie tras i waypointów, żądaniach do dostawców map online, uprawnieniach lokalizacji oraz kopiach zapasowych Androida.
+- Doprecyzowano miękkie usuwanie waypointów: punkt znika z mapy i listy, ale rekord pozostaje w lokalnej bazie. Użytkownik może usunąć dane aplikacji w ustawieniach Androida lub przez odinstalowanie; kopia zapasowa zależy od ustawień urządzenia i konta.
 
 ## Korekta stylu poradnika waypointów — 2026-09-19
 
@@ -60,7 +65,7 @@ Poradnik zweryfikowano z `mapka/app/src/main/java/pl/smolisoft/mapka/core/ui/Way
 
 ## Publikacja
 
-Agent nie wykonał commita ani pusha. Przed rozbudową PL katalog roboczy repozytorium strony był czysty; wcześniejsze prace EN były już zapisane w Git. Przy publikacji link do polityki w Google powinien wskazywać sam `privacy-en.html` lub `privacy.html` na hostowanej stronie, nie stronę główną. Nie zmieniano Play Console ani konfiguracji hostingu.
+Strona jest publikowana z gałęzi `main` repozytorium GitHub Pages. Aktualizację usuwającą opis Firebase zapisano i wysłano w commicie `1027a09`; końcowy przegląd 1.2.9 doprecyzował polityki PL/EN. Link w Google Play wskazuje bezpośrednio hostowaną `privacy.html`. Konfiguracji hostingu nie zmieniano.
 
 ## Weryfikacja
 
